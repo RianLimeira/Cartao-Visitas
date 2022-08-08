@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CartaoVisitas</string>
+    <string name="label_business_cards">Cartão de Visitas</string>
 </resources>
