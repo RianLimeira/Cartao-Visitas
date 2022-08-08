@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import com.rian.cartaovisitas.App
 
 import com.rian.cartaovisitas.databinding.ActivityMainBinding
+import com.rian.cartaovisitas.util.Image
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         binding.fabBotao.setOnClickListener {
             val intent = Intent(this@MainActivity, AddBusinessCardActivity::class.java)
             startActivity(intent)
+        }
+        adapter.listenerShare = { card ->
+            Image.share(this@MainActivity, card)
+
         }
     }
 
